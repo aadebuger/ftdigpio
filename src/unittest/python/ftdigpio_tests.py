@@ -21,7 +21,7 @@ class Test(unittest.TestCase):
         ret = myf.getStatus()
         print 'getBitMode()=',myf.getBitMode()
         bitmask = 0x11 << 1;
-        myf.setBitMode(0x0f,0)
+        myf.setBitMode(0xff,0x20)
         
         print 'ret=',ret
         
