@@ -6,7 +6,7 @@ Created on 2014年9月1日
 '''
 import unittest
 import ftd2xx.ftd2xx
-
+import time
 class Test(unittest.TestCase):
 
 
@@ -22,6 +22,9 @@ class Test(unittest.TestCase):
         print 'getBitMode()=',myf.getBitMode()
         bitmask = 0x11 << 1;
         myf.setBitMode(0xff,0x20)
+        time.sleep(5)
+        myf.setBitMode(0x0f,0x20)
+        
         
         print 'ret=',ret
         
