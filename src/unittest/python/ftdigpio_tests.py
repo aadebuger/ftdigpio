@@ -11,8 +11,9 @@ class Test(unittest.TestCase):
 
 
     def testName(self):
-        ftd2xx.ftd2xx.listDevices(0)
-
+        print 'ftd2xx'
+        a= ftd2xx.ftd2xx.listDevices(0)
+        print 'a=',a
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
