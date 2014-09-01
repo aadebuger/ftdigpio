@@ -19,6 +19,9 @@ class Test(unittest.TestCase):
         myf = ftd2xx.ftd2xx.open(0)
 #        myftd2xx =  ftd2xx.ftd2xx.FTD2XX(myf)
         ret = myf.getStatus()
+        print 'getBitMode()=',myf.getBitMode()
+        bitmask = 0x11 << 1;
+        myf.setBitMode(0x0f,1)
         print 'ret=',ret
         
         myf.close();
