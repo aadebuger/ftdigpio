@@ -21,6 +21,8 @@ class Test(unittest.TestCase):
         ret = myftd2xx.getStatus()
         print 'ret=',ret
         
+        myftd2xx.close();
+        
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
