@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Created on 2014年9月1日
 
@@ -10,7 +11,7 @@ class Test(unittest.TestCase):
 
 
     def testName(self):
-        ftd2xx.ftd2xx.listDevices(flags)
+        ftd2xx.ftd2xx.listDevices(0)
 
 
 if __name__ == "__main__":
