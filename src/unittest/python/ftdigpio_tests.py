@@ -16,6 +16,11 @@ class Test(unittest.TestCase):
         print 'a=',a
         print 'getLibraryVersion()=',ftd2xx.ftd2xx.getLibraryVersion()
         print 'getDeviceInfoDetail=',ftd2xx.ftd2xx.getDeviceInfoDetail(0)
+        myf = ftd2xx.ftd2xx.open(0)
+        myftd2xx =  ftd2xx.ftd2xx.FTD2XX(myf)
+        ret = myftd2xx.getStatus()
+        print 'ret=',ret
+        
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
