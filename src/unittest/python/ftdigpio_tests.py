@@ -14,6 +14,8 @@ class Test(unittest.TestCase):
         print 'ftd2xx'
         a= ftd2xx.ftd2xx.listDevices(0)
         print 'a=',a
+        print 'getLibraryVersion()=',ftd2xx.ftd2xx.getLibraryVersion()
+        print 'getDeviceInfoDetail=',ftd2xx.ftd2xx.getDeviceInfoDetail(0)
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
